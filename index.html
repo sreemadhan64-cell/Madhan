@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MADHAN Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+section {
+    padding: 50px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.skills span {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* 3D Animation */
+.cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 50px auto;
+    transform-style: preserve-3d;
+    animation: rotate 8s infinite linear;
+}
+
+.cube div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid white;
+}
+
+.front { transform: translateZ(50px); }
+.back { transform: rotateY(180deg) translateZ(50px); }
+.right { transform: rotateY(90deg) translateZ(50px); }
+.left { transform: rotateY(-90deg) translateZ(50px); }
+.top { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes rotate {
+    0% { transform: rotateX(0) rotateY(0); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>MADHAN</h1>
+    <p>Creative Web Developer | Designer | Dreamer</p>
+</header>
+
+<div class="cube">
+    <div class="front"></div>
+    <div class="back"></div>
+    <div class="right"></div>
+    <div class="left"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+
+<section>
+    <div class="card">
+        <h2>About Me</h2>
+        <p>Hello! I'm MADHAN, a passionate student and creative web developer who loves designing attractive websites with modern UI, animations, and colorful designs.</p>
+    </div>
+
+    <div class="card">
+        <h2>Education</h2>
+        <p>🎓 Bachelor of Computer Applications (BCA)</p>
+        <p>🏫 College: Shree Venkateshwara college</p>
+        <p>📍 Location: Tamil Nadu</p>
+        <p>📅 Year: 2024 - 2027</p>
+    </div>
+
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>UI Design</span>
+            <span>Animation</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+        <p>🌟 Portfolio Website</p>
+        <p>🌟 Animated Web Pages</p>
+        <p>🌟 Creative UI Designs</p>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>📧 Email: sreemadhan64@gmail.com</p>
+        <p>📱 Phone: 6383617375</p>
+    </div>
+</section>
+
+<div class="footer">
+    <p>© 2026 MADHAN | Designed with ❤️</p>
+</div>
+
+</body>
+</html>
+<div class="card">
+    <h2>Education</h2>
+
+    <p>🎓 <b>Bachelor of Computer Applications (BCA)</b></p>
+    <p>🏫 Shree Venkateshwara College</p>
+    <p>📅 2024 - 2027</p>
+
+    <hr style="border:1px solid rgba(255,255,255,0.2); margin:20px 0;">
+
+    <p>🏫 <b>12th Grade (Higher Secondary)</b></p>
+    <p>📊 Percentage: <span style="color:#00f2fe; font-weight:bold;">85%</span></p>
+    <p>📅 Year: 2023</p>
+
+    <hr style="border:1px solid rgba(255,255,255,0.2); margin:20px 0;">
+
+    <p>🏫 <b>10th Grade (SSLC)</b></p>
+    <p>📊 Percentage: <span style="color:#4facfe; font-weight:bold;">90%</span></p>
+    <p>📅 Year: 2021</p>
+
+</div>
